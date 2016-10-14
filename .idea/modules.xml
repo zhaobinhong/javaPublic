@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/array/array.iml" filepath="$PROJECT_DIR$/array/array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/first/first.iml" filepath="$PROJECT_DIR$/first/first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/javaPublic.iml" filepath="$PROJECT_DIR$/.idea/javaPublic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/publcc/publcc.iml" filepath="$PROJECT_DIR$/publcc/publcc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twoDimensionalArray/twoDimensionalArray.iml" filepath="$PROJECT_DIR$/twoDimensionalArray/twoDimensionalArray.iml" />
+    </modules>
+  </component>
+</project>
