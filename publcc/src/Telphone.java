@@ -13,7 +13,7 @@ public class Telphone {
     private float mem;
     int var = 40;
 
-    public void sendMessage(){
+    public void sendMessage() {
         System.out.println("\n this sendMessage \n");
     }
 
@@ -30,7 +30,6 @@ public class Telphone {
     }
 
 
-
     //方法
     void phone() {
         int var = 30;
@@ -40,20 +39,34 @@ public class Telphone {
 
     //内部类 Inner ，类Inner在类Telphone的内部
 
-    public class Inner{
+    public class Inner {
         //内部类的方法
-        public void show(){
+        public void show() {
             System.out.println("这是一个成员内部类");
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         //创建外部类对象
-        Telphone Inner=new Telphone();
+        Telphone Inner = new Telphone();
         //创建内部类对象
-        Inner i=Inner.new Inner();
+        Inner i = Inner.new Inner();
         //调用内部类方法
         i.show();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Telphone other = (Telphone) obj;
+        if (screen != other.screen && var != other.var && mem != other.mem && cpu != other.cpu)
+            return false;
+        return true;
     }
 }

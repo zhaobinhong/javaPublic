@@ -1,5 +1,6 @@
 package inherit;
 
+
 /**
  * Created by bankeys-01 on 2016/10/17.
  */
@@ -10,7 +11,32 @@ public class Dog extends Animal {
         System.out.println("dog 吃东西");
     }
 
-    public void show(){
+
+    public void show() {
         super.eat();
+
+    }
+
+    //重写toString
+    @Override
+    public String toString() {
+        return "Dog [age=" + age + "]";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        //比较对象的类型
+        if (getClass() != obj.getClass())
+            return false;
+
+        Dog other = (Dog) obj;
+        if (age != other.age)
+            return false;
+        return true;
+
     }
 }
